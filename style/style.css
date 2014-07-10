@@ -1,0 +1,92 @@
+html {
+	text-align: center;
+background: #1E1E20;
+color: rgba(222, 209, 169, 1);
+	   font-family: 'Open Sans', sans-serif;
+	   font-size: 1.3em;
+}
+
+body {
+display: none;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	margin-top: 15%;
+	font-size: 3.5em;
+}
+
+a {
+	text-decoration: none;
+color: #374140;
+	   transition-property: all;
+	   transition-duration: 0.3s;
+}
+
+a:hover {
+color: #DC3522;
+  }
+
+a i {
+	font-size: 2em;
+	margin-right: 2%;
+}
+
+.mail-t i {
+	margin-right: 0.2%;
+	margin-left: 0.2%;
+color: #046380;
+}
+
+.mail-t {
+color: #EFECCA;
+}
+
+#home , #content {
+	height: 100%;
+}
+
+#home i {
+	margin-top: 15%;
+	font-size: 2em;
+	display: none;
+}
+
+#content {
+	padding-top: 2%;
+}
+
+.img {
+	height: 20%;
+}
+
+.img img {
+	max-height: 100%;
+	width: auto;
+}
+
+.img .p {
+	margin-right: 5%;
+	float: right;
+	max-height: 100%;
+	width: 30%;
+	display: none;
+}
+
+.num {
+	display: none;
+}
+
+.hr {
+	border-bottom: 1px solid rgba(57, 57, 56, 1);
+	margin-left: 45%;
+	margin-right: 45%;
+	margin-top: 1%;
+	margin-top: 1%;
+}
