@@ -35,7 +35,6 @@ color: #DC3522;
 
 a i {
 	font-size: 2em;
-	margin-right: 2%;
 }
 
 .mail-t i {
@@ -48,7 +47,7 @@ color: #046380;
 color: #EFECCA;
 }
 
-#home , #content {
+#home , .project {
 	height: 100%;
 }
 
@@ -64,6 +63,11 @@ color: #EFECCA;
 
 .img {
 	height: 20%;
+}
+
+.img2 {
+	height: 40%;
+	width: auto;
 }
 
 .img img {
@@ -89,4 +93,51 @@ color: #EFECCA;
 	margin-right: 45%;
 	margin-top: 1%;
 	margin-top: 1%;
+}
+
+.title {
+	margin-top: 18%;
+	font-size: 1.6em;
+}
+
+#content i {
+	margin-top: 10%;
+	font-size: 2em;
+}
+
+.project h1 {
+	padding-top: 2%;
+	font-size: 2em;
+	font-style: normal;
+	font-weight: 500;
+}
+
+.project p {
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-bottom: 4%;
+}
+
+.project .no-margin {
+	margin-bottom: 0;
+}
+
+.project img {
+	margin-top: 2%;
+	margin-bottom: 1%;
+}
+
+.project i {
+	font-size: 2em;
+	margin-top: 4%;
+}
+
+#contact {
+	height: 100%;
+	padding-top: 6%;
+}
+
+#contact a i {
+	margin-right: 1%;
+	margin-left: 1%;
 }
