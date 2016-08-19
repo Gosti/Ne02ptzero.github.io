@@ -314,6 +314,7 @@ $(function () {
 				"font-family": "Open Sans",
 				"font-size": "1.3em"
 		});
+		$("#skip").hide();
 		$(".preview").show();
 		$(".preview").animate({"width": "100%"}, 1000);
 		$(".lines").remove();
