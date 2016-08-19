@@ -1,15 +1,17 @@
-<!DOCTYPE HTML>
-<html lang="en">
+<html>
 	<head>
 		<!-- CSS Declaration -->
-			<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+			<link rel="stylesheet" type="text/css" href="style.css">
+			<link rel="stylesheet" href="./styles/rainbow.css">
+			<link href="http://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet" type="text/css">
 			<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-			<link href="style/style.css" rel="stylesheet">
 			<link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADyfwAA9v8AAOZ/AADAfwAAAD8AAAA/AAAAPwAAYAcAAOA/AADwAwAA8AMAAPADAADwAwAA+B8AAP//AAD//wAA" rel="icon" type="image/x-icon" />
 
 		<!-- JS import -->
-			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-			<script src="js/script.js"></script>
+			<script src="./jquery-3.1.0.min.js"></script>
+			<script src="./typed.js"></script>
+			<script src="./highlight.pack.js"></script>
+			<script src="./main.js"></script>
 
 		<!-- META Declaration -->
 			<meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
@@ -21,14 +23,34 @@
 			<title>Louis</title>
 	</head>
 	<body>
-		<div id="contact">
-			<h1>Louis</h1>
-			<a href="https://github.com/ne02ptzero/"><i class="fa fa-github"></i></a>
-			<a href="http://twitter.com/ne02ptzero"><i class="fa fa-twitter"></i></a>
-			<a href='cv.pdf'><i class="fa fa-file-pdf-o"></i></a>
-			<br />
-			<br />
-			<a class="mail" href="mailto:louis@ne02ptzero.me">louis@ne02ptzero.me</a>
+		<span class='tmp' style="white-space:pre"></span>
+		<div class='console'>
+			<div class='vanilla'>
+				<span id="prompt">louis <span style='color: purple'>::</span>
+				<span style='color: green' class='pwd'>~</span> 
+				<span style='color: rgb(73, 73, 230)'>%</span> </span>
+				<span id="content" style="white-space:pre"></span><br />
+				<span id="result"></span>
+			</div>
 		</div>
+		<div class='vim'>
+			<span class='menu'>
+				<span style='color: green'> 1</span>+ main.c
+			</span>
+			<!-- Don't look here please. -->
+			<div class='lines'>
+				1<br />2<br />3<br />4<br />5<br />6<br />7<br />8<br />9<br />
+				10<br />11<br />12<br />13<br />14<br />15<br />16<br />17<br />18<br />19<br />20<br />21<br />22<br />23<br />24<br />25<br />26<br />27<br />28<br />29<br />30<br />31<br />32<br />33<br />34<br />35<br />36<br />37<br />38<br />39<br />40<br />41<br />42<br />43<br />44<br />45<br />46<br />47<br />48<br />49<br />50<br />51<br />52<br />53<br />54<br />55<br />56<br />57<br />58<br />59<br />60<br />61<br />62<br />63<br />64<br />65<br />66<br />67<br />68<br />69<br />70
+			</div>
+			<div class='file'>
+				<span id="content" style="white-space:pre"></span>
+			</div>
+			<div class='status'>
+				<span class='st normal'>NORMAL</span><span class='fd'>main.c</span><span class='cmd'></span>
+				<span class='infos'>unix | utf-8 | C</span>
+			</div>
+		</div>
+		<div class='preview'></div>
+		<div id="skip"><i class='fa fa-times'></i></div>
 	</body>
 </html>
