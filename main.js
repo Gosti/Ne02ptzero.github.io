@@ -69,17 +69,21 @@ $(function () {
 		main();
 	}
 
-	$(".tmp").typed({
-		strings: ["^1000Uh.\n^1000Website ?\n^500Please ?\n^2000*sigh*\n^500All right, let's make this work.^500\n/clear\n"],
-		typeSpeed: 0,
-		showCursor: true,
-		cursorChar: '▊',
-		contentType: 'text',
-		callback: function() {
-			$(".tmp").remove();
-			main();
-		}
-	});
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || $(window).width() <= 768) {
+		skip();
+	} else {
+		$(".tmp").typed({
+			strings: ["^1000Uh.\n^1000Website ?\n^500Please ?\n^2000*sigh*\n^500All right, let's make this work.^500\n/clear\n"],
+			typeSpeed: 0,
+			showCursor: true,
+			cursorChar: '▊',
+			contentType: 'text',
+			callback: function() {
+				$(".tmp").remove();
+				main();
+			}
+		});
+	}
 
 	function		main() {
 		$(".console").append("<div class='command-"+ current +"'>" + $(".vanilla").html() + "</div>");
