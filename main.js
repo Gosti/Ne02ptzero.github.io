@@ -118,7 +118,7 @@ $(function () {
 					startDelay: 1000,
 					callback: function() {
 						$(".typed-cursor").remove();
-						setTimeout(closeVim, 1000);
+						setTimeout(closeVim, 3000);
 					}
 				});
 			}
