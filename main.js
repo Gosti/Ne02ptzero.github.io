@@ -40,6 +40,7 @@ $(function () {
 			cmd: "exit",
 			callback: function() {
 				$(".preview").animate({"width": "100%"}, 1000);
+				$("#skip").hide();
 				$(".lines").remove();
 			}
 		}
@@ -68,17 +69,21 @@ $(function () {
 		main();
 	}
 
-	$(".tmp").typed({
-		strings: ["^1000Uh.\n^1000Website ?\n^500Please ?\n^2000*sigh*\n^500All right, let's make this work.^500\n/clear\n"],
-		typeSpeed: 0,
-		showCursor: true,
-		cursorChar: '▊',
-		contentType: 'text',
-		callback: function() {
-			$(".tmp").remove();
-			main();
-		}
-	});
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || $(window).width() <= 768) {
+		skip();
+	} else {
+		$(".tmp").typed({
+			strings: ["^1000Uh.\n^1000Website ?\n^500Please ?\n^2000*sigh*\n^500All right, let's make this work.^500\n/clear\n"],
+			typeSpeed: 0,
+			showCursor: true,
+			cursorChar: '▊',
+			contentType: 'text',
+			callback: function() {
+				$(".tmp").remove();
+				main();
+			}
+		});
+	}
 
 	function		main() {
 		$(".console").append("<div class='command-"+ current +"'>" + $(".vanilla").html() + "</div>");
@@ -101,7 +106,7 @@ $(function () {
 		$(".vim .st").html("INSERT");
 		$(".vim #content").typed({
 			strings: [res.value],
-			typeSpeed: 0,
+			typeSpeed: -100,
 			showCursor: true,
 			cursorChar: '▊',
 			startDelay: 1000,
@@ -117,7 +122,7 @@ $(function () {
 					startDelay: 1000,
 					callback: function() {
 						$(".typed-cursor").remove();
-						setTimeout(closeVim, 1000);
+						setTimeout(closeVim, 3000);
 					}
 				});
 			}
@@ -161,7 +166,7 @@ $(function () {
 	function website() {
 		$(".vim #content").typed({
 			strings: html,
-			typeSpeed: 0,
+			typeSpeed: -50,
 			showCursor: true,
 			cursorChar: '▊',
 			callback: function() {
