@@ -116,6 +116,10 @@ body {
 }
 
 
+.console, .vim, .tmp {
+	line-height: 1em;
+}
+
 #skip {
 	position: fixed;
 	color: white;
